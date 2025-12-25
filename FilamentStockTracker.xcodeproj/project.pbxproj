@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		375CF9FA2EFD7FD800012B1A /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 375CF9F92EFD7FD800012B1A /* Supabase */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		375CF9BF2EFD62E200012B1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 375CF9A92EFD62E000012B1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 375CF9B02EFD62E000012B1A;
+			remoteInfo = FilamentStockTracker;
+		};
+		375CF9C92EFD62E200012B1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 375CF9A92EFD62E000012B1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 375CF9B02EFD62E000012B1A;
+			remoteInfo = FilamentStockTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		375CF9B12EFD62E000012B1A /* FilamentStockTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilamentStockTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		375CF9BE2EFD62E200012B1A /* FilamentStockTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilamentStockTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		375CF9C82EFD62E200012B1A /* FilamentStockTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilamentStockTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		375CF9EE2EFD69F100012B1A /* Exceptions for "FilamentStockTracker" folder in "FilamentStockTracker" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				.gitignore,
+			);
+			target = 375CF9B02EFD62E000012B1A /* FilamentStockTracker */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		375CF9B32EFD62E000012B1A /* FilamentStockTracker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				375CF9EE2EFD69F100012B1A /* Exceptions for "FilamentStockTracker" folder in "FilamentStockTracker" target */,
+			);
+			path = FilamentStockTracker;
+			sourceTree = "<group>";
+		};
+		375CF9C12EFD62E200012B1A /* FilamentStockTrackerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FilamentStockTrackerTests;
+			sourceTree = "<group>";
+		};
+		375CF9CB2EFD62E200012B1A /* FilamentStockTrackerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FilamentStockTrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		375CF9AE2EFD62E000012B1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				375CF9FA2EFD7FD800012B1A /* Supabase in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		375CF9BB2EFD62E200012B1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		375CF9C52EFD62E200012B1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		375CF9A82EFD62E000012B1A = {
+			isa = PBXGroup;
+			children = (
+				375CF9B32EFD62E000012B1A /* FilamentStockTracker */,
+				375CF9C12EFD62E200012B1A /* FilamentStockTrackerTests */,
+				375CF9CB2EFD62E200012B1A /* FilamentStockTrackerUITests */,
+				375CF9F82EFD7FD800012B1A /* Frameworks */,
+				375CF9B22EFD62E000012B1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		375CF9B22EFD62E000012B1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				375CF9B12EFD62E000012B1A /* FilamentStockTracker.app */,
+				375CF9BE2EFD62E200012B1A /* FilamentStockTrackerTests.xctest */,
+				375CF9C82EFD62E200012B1A /* FilamentStockTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		375CF9F82EFD7FD800012B1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		375CF9B02EFD62E000012B1A /* FilamentStockTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 375CF9D22EFD62E200012B1A /* Build configuration list for PBXNativeTarget "FilamentStockTracker" */;
+			buildPhases = (
+				375CF9AD2EFD62E000012B1A /* Sources */,
+				375CF9AE2EFD62E000012B1A /* Frameworks */,
+				375CF9AF2EFD62E000012B1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				375CF9B32EFD62E000012B1A /* FilamentStockTracker */,
+			);
+			name = FilamentStockTracker;
+			packageProductDependencies = (
+				375CF9F92EFD7FD800012B1A /* Supabase */,
+			);
+			productName = FilamentStockTracker;
+			productReference = 375CF9B12EFD62E000012B1A /* FilamentStockTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		375CF9BD2EFD62E200012B1A /* FilamentStockTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 375CF9D52EFD62E200012B1A /* Build configuration list for PBXNativeTarget "FilamentStockTrackerTests" */;
+			buildPhases = (
+				375CF9BA2EFD62E200012B1A /* Sources */,
+				375CF9BB2EFD62E200012B1A /* Frameworks */,
+				375CF9BC2EFD62E200012B1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				375CF9C02EFD62E200012B1A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				375CF9C12EFD62E200012B1A /* FilamentStockTrackerTests */,
+			);
+			name = FilamentStockTrackerTests;
+			packageProductDependencies = (
+			);
+			productName = FilamentStockTrackerTests;
+			productReference = 375CF9BE2EFD62E200012B1A /* FilamentStockTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		375CF9C72EFD62E200012B1A /* FilamentStockTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 375CF9D82EFD62E200012B1A /* Build configuration list for PBXNativeTarget "FilamentStockTrackerUITests" */;
+			buildPhases = (
+				375CF9C42EFD62E200012B1A /* Sources */,
+				375CF9C52EFD62E200012B1A /* Frameworks */,
+				375CF9C62EFD62E200012B1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				375CF9CA2EFD62E200012B1A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				375CF9CB2EFD62E200012B1A /* FilamentStockTrackerUITests */,
+			);
+			name = FilamentStockTrackerUITests;
+			packageProductDependencies = (
+			);
+			productName = FilamentStockTrackerUITests;
+			productReference = 375CF9C82EFD62E200012B1A /* FilamentStockTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		375CF9A92EFD62E000012B1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					375CF9B02EFD62E000012B1A = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					375CF9BD2EFD62E200012B1A = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 375CF9B02EFD62E000012B1A;
+					};
+					375CF9C72EFD62E200012B1A = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 375CF9B02EFD62E000012B1A;
+					};
+				};
+			};
+			buildConfigurationList = 375CF9AC2EFD62E000012B1A /* Build configuration list for PBXProject "FilamentStockTracker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 375CF9A82EFD62E000012B1A;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				375CF9F22EFD7E0500012B1A /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 375CF9B22EFD62E000012B1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				375CF9B02EFD62E000012B1A /* FilamentStockTracker */,
+				375CF9BD2EFD62E200012B1A /* FilamentStockTrackerTests */,
+				375CF9C72EFD62E200012B1A /* FilamentStockTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		375CF9AF2EFD62E000012B1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		375CF9BC2EFD62E200012B1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		375CF9C62EFD62E200012B1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		375CF9AD2EFD62E000012B1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		375CF9BA2EFD62E200012B1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		375CF9C42EFD62E200012B1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		375CF9C02EFD62E200012B1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 375CF9B02EFD62E000012B1A /* FilamentStockTracker */;
+			targetProxy = 375CF9BF2EFD62E200012B1A /* PBXContainerItemProxy */;
+		};
+		375CF9CA2EFD62E200012B1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 375CF9B02EFD62E000012B1A /* FilamentStockTracker */;
+			targetProxy = 375CF9C92EFD62E200012B1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		375CF9D02EFD62E200012B1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		375CF9D12EFD62E200012B1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		375CF9D32EFD62E200012B1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.fited.FilamentStockTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		375CF9D42EFD62E200012B1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.fited.FilamentStockTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		375CF9D62EFD62E200012B1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.fited.FilamentStockTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FilamentStockTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FilamentStockTracker";
+			};
+			name = Debug;
+		};
+		375CF9D72EFD62E200012B1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.fited.FilamentStockTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FilamentStockTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FilamentStockTracker";
+			};
+			name = Release;
+		};
+		375CF9D92EFD62E200012B1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.fited.FilamentStockTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = FilamentStockTracker;
+			};
+			name = Debug;
+		};
+		375CF9DA2EFD62E200012B1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.fited.FilamentStockTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = FilamentStockTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		375CF9AC2EFD62E000012B1A /* Build configuration list for PBXProject "FilamentStockTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				375CF9D02EFD62E200012B1A /* Debug */,
+				375CF9D12EFD62E200012B1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		375CF9D22EFD62E200012B1A /* Build configuration list for PBXNativeTarget "FilamentStockTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				375CF9D32EFD62E200012B1A /* Debug */,
+				375CF9D42EFD62E200012B1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		375CF9D52EFD62E200012B1A /* Build configuration list for PBXNativeTarget "FilamentStockTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				375CF9D62EFD62E200012B1A /* Debug */,
+				375CF9D72EFD62E200012B1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		375CF9D82EFD62E200012B1A /* Build configuration list for PBXNativeTarget "FilamentStockTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				375CF9D92EFD62E200012B1A /* Debug */,
+				375CF9DA2EFD62E200012B1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		375CF9F22EFD7E0500012B1A /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		375CF9F92EFD7FD800012B1A /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 375CF9F22EFD7E0500012B1A /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 375CF9A92EFD62E000012B1A /* Project object */;
+}
