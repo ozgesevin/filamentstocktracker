@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AuthView: View {
     @EnvironmentObject var auth: AuthManager
+
     @State private var email = ""
     @State private var code = ""
     @State private var phase: Phase = .enterEmail
@@ -17,47 +18,94 @@ struct AuthView: View {
     enum Phase { case enterEmail, enterCode }
 
     var body: some View {
-        VStack(spacing: 12) {
-            Text("Filament Stock Tracker").font(.title2).bold()
+        VStack(spacing: 14) {
+            Text("Filament Stock Tracker")
+                .font(.title2)
+                .bold()
 
             if phase == .enterEmail {
                 TextField("company email (…@fited.co)", text: $email)
                     .textFieldStyle(.roundedBorder)
+                    .autocorrectionDisabled()
+                    .disabled(auth.isLoading)
 
-                Button("Send Code") {
-                    Task {
-                        do {
-                            errorText = nil
-                            try await auth.sendCode(to: email)
-                            phase = .enterCode
-                        } catch { errorText = error.localizedDescription }
+                Button {
+                    Task { await sendCode() }
+                } label: {
+                    if auth.isLoading {
+                        ProgressView().controlSize(.small)
+                    } else {
+                        Text("Send Code")
                     }
                 }
                 .keyboardShortcut(.defaultAction)
+                .disabled(auth.isLoading || email.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
+
             } else {
-                Text("Code sent to \(email)").foregroundStyle(.secondary)
-                TextField("6-digit code", text: $code)
+                Text("Code sent to \(email)")
+                    .foregroundStyle(.secondary)
+
+                TextField("8-digit code", text: $code)
                     .textFieldStyle(.roundedBorder)
+                    .autocorrectionDisabled()
+                    .disabled(auth.isLoading)
+                    .onChange(of: code) { _, newValue in
+                        let digitsOnly = newValue.filter { $0.isNumber }
+                        code = String(digitsOnly.prefix(8))
+                    }
 
                 Button("Verify") {
                     Task {
                         do {
                             errorText = nil
-                            try await auth.verify(email: email, code: code)
-                        } catch { errorText = error.localizedDescription }
+                            try await auth.verifyCode(email: email, code: code)
+                        } catch {
+                            errorText = error.localizedDescription
+                        }
                     }
                 }
-                .keyboardShortcut(.defaultAction)
+                .disabled(auth.isLoading || !(6...8).contains(code.count))
 
-                Button("Back") { phase = .enterEmail; code = "" }
-                    .buttonStyle(.link)
+
+                Button("Back") {
+                    phase = .enterEmail
+                    code = ""
+                    auth.lastError = nil
+                }
+                .buttonStyle(.link)
+                .disabled(auth.isLoading)
             }
 
-            if let errorText {
-                Text(errorText).foregroundStyle(.red).font(.footnote)
+            if let err = auth.lastError, !err.isEmpty {
+                Text(err)
+                    .foregroundStyle(.red)
+                    .font(.footnote)
             }
         }
         .padding(24)
         .frame(width: 420)
+    }
+
+    // MARK: - Actions
+
+    private func sendCode() async {
+        auth.lastError = nil
+        do {
+            try await auth.sendCode(to: email)
+            phase = .enterCode
+        } catch {
+            // AuthManager zaten lastError set ediyor, ama garanti olsun diye:
+            auth.lastError = error.localizedDescription
+        }
+    }
+
+    private func verify() async {
+        auth.lastError = nil
+        do {
+            try await auth.verifyCode(email: email, code: code)
+            // session geldiyse ContentView route edecek; phase değiştirmen gerekmiyor.
+        } catch {
+            auth.lastError = error.localizedDescription
+        }
     }
 }
